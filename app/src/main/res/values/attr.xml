@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CustomImageView -->
+    <declare-styleable name="CustomImageView">
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="image" format="reference" />
+        <attr name="imageType" >
+            <enum name="fillXY" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- ProgressView -->
+    <declare-styleable name="ProgressView">
+        <attr name="progressRadius" format="dimension" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="firstColor" format="color" />
+        <attr name="secondColor" format="color" />
+        <attr name="progressTextEnable" format="boolean" />
+        <attr name="progressTextColor" format="dimension" />
+        <attr name="progressTextSize" format="dimension" />
+        <attr name="progressText" format="string" />
+        <attr name="curProgress" format="float" />
+        <attr name="progressAngle" format="integer" />
+    </declare-styleable>
+
+</resources>
