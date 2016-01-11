@@ -44,54 +44,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_gravity="center_horizontal"
+            app:progressAngle="180"
             />
 
-        <pk.view.layout.CornerLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:background="#AA333333" >
+        <include layout="@layout/layout_corner" android:visibility="gone" />
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:background="#FF4444"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+        <include layout="@layout/layout_drag" android:visibility="gone" />
 
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+        <include layout="@layout/layout_clickeffect" />
 
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:text="2"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-        </pk.view.layout.CornerLayout>
+        <include layout="@layout/layout_clock" />
 
     </LinearLayout>
 

@@ -3,6 +3,7 @@ package pk.view;
 import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -41,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 ValueAnimator a = ValueAnimator.ofFloat(0, 1);
-                a.setDuration(3000);
+                a.setDuration(4000);
                 a.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
@@ -87,7 +88,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        randomView.change();
+        startActivity(new Intent(this, PointActivity.class));
     }
 
 }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_height="match_parent">
+
+    <pk.view.widget.ProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        app:progressAngle="180"
+        />
+
+    <pk.view.widget.ProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        app:progressAngle="180"
+        />
+
+    <pk.view.widget.ProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        app:progressAngle="180"
+        />
+
+    <pk.view.widget.ProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        app:progressAngle="180"
+        />
+
+</LinearLayout>
