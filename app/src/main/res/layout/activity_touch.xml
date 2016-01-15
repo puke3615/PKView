@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relative"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <pk.view.touch.FatherLayout
+        android:id="@+id/linear"
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:background="#e1e1e1"
+        android:layout_centerInParent="true"
+        android:layout_height="500dp">
+
+        <pk.view.touch.ChildView
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_centerInParent="true"
+            android:background="#e4e4e4"
+            android:layout_height="150dp"/>
+
+    </pk.view.touch.FatherLayout>
+
+</RelativeLayout>

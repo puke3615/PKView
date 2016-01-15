@@ -1,0 +1,19 @@
+<resources>
+    <!-- HeadView -->
+    <declare-styleable name="HeadView">
+        <attr name="leftText" format="string|reference" />
+        <attr name="leftTextPadding" format="dimension" />
+        <attr name="leftImage" format="reference" />
+        <attr name="titleText" format="string|reference" />
+        <attr name="rightText" format="string|reference" />
+        <attr name="rightTextPadding" format="dimension" />
+        <attr name="rightImage" format="reference" />
+
+        <attr name="leftSize" format="dimension" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="rightSize" format="dimension" />
+
+        <attr name="fontColor" format="color" />
+
+    </declare-styleable>
+</resources>

@@ -19,6 +19,18 @@
             android:layout_height="wrap_content"
             android:text="测试一下"/>
 
+        <Button
+            android:id="@+id/touch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="touch"/>
+
+        <Button
+            android:id="@+id/drag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="drag"/>
+
         <pk.view.widget.RandomView
             android:id="@+id/randomView"
             android:layout_width="wrap_content"
@@ -54,6 +66,10 @@
         <include layout="@layout/layout_clickeffect" />
 
         <include layout="@layout/layout_clock" />
+
+        <include layout="@layout/layout_headview" />
+
+        <include layout="@layout/layout_roundimage" />
 
     </LinearLayout>
 

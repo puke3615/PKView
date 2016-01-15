@@ -8,13 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import pk.view.drag.DragActivity;
+import pk.view.touch.TouchActivity;
 import pk.view.widget.ProgressView;
 import pk.view.widget.RandomView;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    private Button button;
+    private Button button, touch, drag;
     private RandomView randomView;
     private ProgressView progressView;
 
@@ -28,6 +30,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
+
+        touch = (Button) findViewById(R.id.touch);
+        touch.setOnClickListener(this);
+
+        drag = (Button) findViewById(R.id.drag);
+        drag.setOnClickListener(this);
 
         randomView = (RandomView) findViewById(R.id.randomView);
         initRandomView();
@@ -88,7 +96,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        startActivity(new Intent(this, PointActivity.class));
+        switch (view.getId()) {
+            case R.id.button:
+                startActivity(new Intent(this, PointActivity.class));
+                break;
+            case R.id.touch:
+                startActivity(new Intent(this, TouchActivity.class));
+                break;
+            case R.id.drag:
+                startActivity(new Intent(this, DragActivity.class));
+                break;
+        }
     }
 
 }

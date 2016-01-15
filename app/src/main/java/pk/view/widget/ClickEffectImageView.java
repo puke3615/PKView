@@ -69,9 +69,12 @@ public class ClickEffectImageView extends ImageView {
                 isCancel = e.getX() < 0 || e.getX() > getWidth()
                         || e.getY() < 0 || e.getY() > getHeight();
                 break;
+            case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
-                isRelease = true;
-                clearEffect();
+                if (!isRelease) {
+                    isRelease = true;
+                    clearEffect();
+                }
                 if(!isCancel && !isLongClick) {
                     performClick();
                 }

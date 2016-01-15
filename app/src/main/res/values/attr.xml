@@ -27,5 +27,4 @@
         <attr name="progressAngle" format="integer" />
     </declare-styleable>
 
-
 </resources>

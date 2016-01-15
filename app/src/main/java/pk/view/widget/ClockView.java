@@ -17,6 +17,7 @@ import android.view.View;
 public class ClockView extends View {
 
     private Paint mPaint;
+    private OvalHelper mHelper;
 
     public ClockView(Context context) {
         this(context, null, 0);
@@ -33,10 +34,19 @@ public class ClockView extends View {
 
     private void init() {
         mPaint = new Paint();
+        mHelper = new OvalHelper(this);
+        setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mHelper.start(200);
+            }
+        });
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
+        canvas.save();
+
         int width = getMeasuredWidth();
         int height = getMeasuredHeight();
         mPaint.setStyle(Paint.Style.STROKE);
@@ -72,5 +82,8 @@ public class ClockView extends View {
             }
             canvas.rotate(6, 0, 0);
         }
+
+        canvas.restore();
+        mHelper.handle(canvas);
     }
 }
